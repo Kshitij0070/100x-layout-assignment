@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <!-- inter font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Step 3 of 4</title>
+  </head>
+  <body
+    class="flex min-h-screen min-w-full flex-col bg-neutral-1000 px-4 font-inter text-neutral-50"
+  >
+    <header class="flex items-center gap-5 py-3">
+      <a href="../src/step2.html">
+        <button>
+          <img src="../public/images/cancel.svg" alt="cancel" />
+        </button>
+      </a>
+      <h4 class="text-sm2 font-bold">Step 3 of 4</h4>
+    </header>
+    <main class="flex min-h-full flex-grow flex-col pb-5 pt-2.5">
+      <div class="flex flex-col gap-2">
+        <h3 class="text-2xl font-bold">We sent you a code</h3>
+        <p class="text-sm text-neutral-500">
+          Enter it below to verify example@gmail.com
+        </p>
+      </div>
+      <div class="flex flex-col gap-3 pt-10">
+        <div
+          class="group w-full rounded border border-solid border-neutral-500 caret-twitter-blue focus-within:border-twitter-blue"
+        >
+          <legend
+            class="absolute -mt-2 ml-3 bg-black px-1 text-xs text-neutral-500 group-focus-within:text-twitter-blue"
+          >
+            Verification Code
+          </legend>
+          <div class="flex justify-between px-2 py-3">
+            <input
+              class="w-full bg-transparent focus:outline-none"
+              type="text"
+              name="Code"
+              id="code"
+              placeholder="Enter Verification Code"
+            />
+            <img
+              class="hidden text-end group-focus-within:inline"
+              src="../public/images/correct.svg"
+              alt="correct"
+              width="20"
+            />
+          </div>
+        </div>
+        <div
+          class="flex justify-end text-sm text-twitter-blue hover:text-neutral-500"
+        >
+          <a href="#">Didn't Receive a Code? </a>
+        </div>
+      </div>
+      <div class="mt-auto">
+        <a href="../src/step4.html">
+          <button class="blue-btn w-full px-5 py-2">Next</button>
+        </a>
+      </div>
+    </main>
+  </body>
+</html>

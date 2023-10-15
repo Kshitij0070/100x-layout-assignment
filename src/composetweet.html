@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <!-- font-inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Login page</title>
+  </head>
+
+  <body
+    class="min-h-screen w-screen bg-neutral-1000 font-inter text-neutral-50"
+  >
+    <header class="flex items-center justify-between gap-5 px-4 py-3">
+      <a href="../src/homefeed.html">
+        <button>
+          <img src="../public/images/cancel.svg" alt="cancel" />
+        </button>
+      </a>
+      <div class="my-5">
+        <button class="blue-btn px-6 py-2" disabled>Post</button>
+      </div>
+    </header>
+    <main>
+      <div class="flex gap-3 px-4 py-2">
+        <img
+          src="../public/images/user-avatar.png"
+          alt="user-avatar"
+          height="36"
+          width="36"
+        />
+        <textarea
+          class="resize-none bg-transparent py-1 caret-twitter-blue focus:outline-none"
+          name="tweet"
+          id="tweet"
+          cols="35"
+          rows="1"
+          placeholder="What's happening ?!"
+          maxlength="250"
+          aria-multiline="true"
+        ></textarea>
+      </div>
+      <!-- a lot of thing here needed js so avoided that for now -->
+    </main>
+  </body>
+</html>

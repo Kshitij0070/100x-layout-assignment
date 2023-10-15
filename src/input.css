@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .blue-btn {
+    @apply rounded-full bg-twitter-blue font-bold text-neutral-50 hover:bg-twitter-blue-2 disabled:pointer-events-none disabled:opacity-50;
+  }
+
+  .btn-white {
+    @apply rounded-full bg-neutral-50 font-bold text-neutral-1000 hover:bg-neutral-200 disabled:pointer-events-none disabled:opacity-50;
+  }
+}
